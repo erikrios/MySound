@@ -6,3 +6,4 @@
 {"from":"babayaga","to":"caesar","value":1000,"data":""}
 {"from":"babayaga","to":"erikrios","value":50,"data":""}
 {"from":"erikrios","to":"erikrios","value":100,"data":"reward"}
+{"from":"erikrios","to":"erikrios","value":100,"data":"reward"}
