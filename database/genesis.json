@@ -1,0 +1,7 @@
+{
+  "genesis_time": "2022-12-31T08:07:25+07:00",
+  "chain_id": "the-blockchain-bar-ledger",
+  "balances": {
+    "erikrios": 1000000
+  }
+}
