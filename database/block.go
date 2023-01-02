@@ -12,7 +12,7 @@ func (h Hash) MarshalText() ([]byte, error) {
 	return []byte(hex.EncodeToString(h[:])), nil
 }
 
-func (h Hash) UnmarshalText(data []byte) error {
+func (h *Hash) UnmarshalText(data []byte) error {
 	_, err := hex.Decode(h[:], data)
 	return err
 }
@@ -28,8 +28,8 @@ type BlockHeader struct {
 }
 
 type BlockFS struct {
-	Key   Hash  `json:"key"`
-	Value Block `json:"value"`
+	Key   Hash  `json:"hash"`
+	Value Block `json:"block"`
 }
 
 func NewBlock(parent Hash, time uint64, txs []Tx) Block {
